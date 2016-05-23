@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "BNRReminderViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // Get the XIB file from main bundle
+    BNRReminderViewController *rvc = [[BNRReminderViewController alloc] initWithNibName:@"BNRReminderViewController" bundle:[NSBundle mainBundle]];
+    
+    self.window.rootViewController = rvc;
+    
+    
+    
     return YES;
 }
 
