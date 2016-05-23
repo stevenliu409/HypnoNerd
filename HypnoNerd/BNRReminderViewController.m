@@ -16,13 +16,24 @@
 
 @implementation BNRReminderViewController
 
-- (void)viewDidLoad {
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    if(self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        self.tabBarItem.title = @"Reminder";
+        self.tabBarItem.image = [UIImage imageNamed:@"Time"];
+    }
+    return  self;
+}
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
 
 
-- (IBAction)addReminder:(id)sender {
+- (IBAction)addReminder:(id)sender
+{
     NSDate *date = self.datePicker.date;
     NSLog(@"Setting a reminder for %@", date);
 }

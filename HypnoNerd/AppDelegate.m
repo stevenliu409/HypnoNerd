@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "BNRReminderViewController.h"
+#import "BNRHypnosisViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,8 +22,15 @@
     
     // Get the XIB file from main bundle
     BNRReminderViewController *rvc = [[BNRReminderViewController alloc] initWithNibName:@"BNRReminderViewController" bundle:[NSBundle mainBundle]];
+    BNRHypnosisViewController *hvc = [[BNRHypnosisViewController alloc] init];
     
-    self.window.rootViewController = rvc;
+    
+    UITabBarController *tabController = [[UITabBarController alloc] init];
+    tabController.viewControllers = @[hvc, rvc];
+    
+    
+    
+    self.window.rootViewController = tabController;
     
     
     
