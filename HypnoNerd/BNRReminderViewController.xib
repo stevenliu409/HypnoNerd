@@ -13,21 +13,17 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="gEq-W8-MvA">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ud3-OV-jtJ">
-                    <rect key="frame" x="0.0" y="77" width="600" height="216"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="600" id="Jva-PP-dk6"/>
-                        <constraint firstAttribute="height" constant="216" id="rvt-5D-iMS"/>
-                    </constraints>
+                    <rect key="frame" x="0.0" y="77" width="375" height="216"/>
                     <date key="date" timeIntervalSinceReferenceDate="485736863.27062798">
                         <!--2016-05-23 22:54:23 +0000-->
                     </date>
                 </datePicker>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3e-Fc-4Gl">
-                    <rect key="frame" x="147" y="365" width="306" height="58"/>
+                    <rect key="frame" x="35" y="365" width="306" height="58"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="58" id="6tl-Qs-bj7"/>
                         <constraint firstAttribute="width" constant="306" id="8Ff-FV-lNS"/>
@@ -46,6 +42,7 @@
                 <constraint firstItem="x3e-Fc-4Gl" firstAttribute="centerX" secondItem="Ud3-OV-jtJ" secondAttribute="centerX" id="VSp-Oq-STe"/>
                 <constraint firstItem="x3e-Fc-4Gl" firstAttribute="top" secondItem="Ud3-OV-jtJ" secondAttribute="bottom" constant="72" id="fLa-kH-dn3"/>
             </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="706" y="330"/>
         </view>
     </objects>
