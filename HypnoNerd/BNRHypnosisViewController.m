@@ -11,6 +11,9 @@
 
 @interface BNRHypnosisViewController ()
 
+@property (nonatomic, strong) BNRHypnosisView *backgroundView;
+@property (nonatomic, strong) UISegmentedControl *segControl;
+
 @end
 
 @implementation BNRHypnosisViewController
@@ -28,22 +31,47 @@
 // Setting up the view programatically
 -(void)loadView
 {
-    BNRHypnosisView *backgroundView = [[BNRHypnosisView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.view = backgroundView;
+    self.backgroundView = [[BNRHypnosisView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.view = self.backgroundView;
     
+    CGPoint center;
+    center.x = self.view.bounds.origin.x + self.view.bounds.size.width / 2.0;
+    center.y = self.view.bounds.origin.y + self.view.bounds.size.height / 2.0;
+    
+    self.segControl = [[UISegmentedControl alloc] initWithItems:@[@"red", @"green", @"blue"]];
+    self.segControl.frame = CGRectMake(center.x-75, 20, 150, 25);
+    [self.view addSubview:self.segControl];
+
+
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self.segControl addTarget:self action:@selector(changeCircleColor:) forControlEvents:UIControlEventValueChanged];
+
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)changeCircleColor:(UISegmentedControl *)segment {
+    switch (segment.selectedSegmentIndex) {
+        case 0:
+            self.backgroundView.circleColor = [UIColor redColor];
+            break;
+        case 1:
+            self.backgroundView.circleColor = [UIColor greenColor];
+            break;
+        case 2:
+            self.backgroundView.circleColor = [UIColor blueColor];
+            break;
+        default:
+            break;
+    }
 }
+
+
+
 
 @end

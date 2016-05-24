@@ -10,8 +10,6 @@
 
 @interface BNRHypnosisView()
 
-@property (nonatomic, strong) UIColor *circleColor;
-
 @end
 
 
@@ -60,6 +58,7 @@
     [self.circleColor setStroke]; // set the color of stroke
     
     [path stroke]; // draw the circle
+    
     
     CGContextRef currentContext = UIGraphicsGetCurrentContext(); //grab the current graphics context
     
