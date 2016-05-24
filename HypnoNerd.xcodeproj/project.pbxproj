@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		26F123641CF3C03C00E4F6C9 /* BNRReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F123631CF3C03C00E4F6C9 /* BNRReminderViewController.m */; };
 		26F123661CF3C15100E4F6C9 /* BNRReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26F123651CF3C15100E4F6C9 /* BNRReminderViewController.xib */; };
+		26F1236A1CF4617100E4F6C9 /* BNRQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F123681CF4617100E4F6C9 /* BNRQuizViewController.m */; };
+		26F1236B1CF4617100E4F6C9 /* BNRQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26F123691CF4617100E4F6C9 /* BNRQuizViewController.xib */; };
 		26F6E99C1CF16E5200961D57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F6E99B1CF16E5200961D57 /* main.m */; };
 		26F6E99F1CF16E5200961D57 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F6E99E1CF16E5200961D57 /* AppDelegate.m */; };
 		26F6E9A51CF16E5200961D57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26F6E9A31CF16E5200961D57 /* Main.storyboard */; };
@@ -33,6 +35,9 @@
 		26F123621CF3C03C00E4F6C9 /* BNRReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRReminderViewController.h; sourceTree = "<group>"; };
 		26F123631CF3C03C00E4F6C9 /* BNRReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRReminderViewController.m; sourceTree = "<group>"; };
 		26F123651CF3C15100E4F6C9 /* BNRReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRReminderViewController.xib; sourceTree = "<group>"; };
+		26F123671CF4617100E4F6C9 /* BNRQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRQuizViewController.h; sourceTree = "<group>"; };
+		26F123681CF4617100E4F6C9 /* BNRQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRQuizViewController.m; sourceTree = "<group>"; };
+		26F123691CF4617100E4F6C9 /* BNRQuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRQuizViewController.xib; sourceTree = "<group>"; };
 		26F6E9971CF16E5200961D57 /* HypnoNerd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypnoNerd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26F6E99B1CF16E5200961D57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		26F6E99D1CF16E5200961D57 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,6 +103,9 @@
 				26F6E9A31CF16E5200961D57 /* Main.storyboard */,
 				26F123621CF3C03C00E4F6C9 /* BNRReminderViewController.h */,
 				26F123631CF3C03C00E4F6C9 /* BNRReminderViewController.m */,
+				26F123671CF4617100E4F6C9 /* BNRQuizViewController.h */,
+				26F123681CF4617100E4F6C9 /* BNRQuizViewController.m */,
+				26F123691CF4617100E4F6C9 /* BNRQuizViewController.xib */,
 				26F123651CF3C15100E4F6C9 /* BNRReminderViewController.xib */,
 				26F6E9A61CF16E5200961D57 /* Assets.xcassets */,
 				26F6E9A81CF16E5200961D57 /* LaunchScreen.storyboard */,
@@ -208,6 +216,7 @@
 				26F123661CF3C15100E4F6C9 /* BNRReminderViewController.xib in Resources */,
 				26F6E9A71CF16E5200961D57 /* Assets.xcassets in Resources */,
 				26F6E9A51CF16E5200961D57 /* Main.storyboard in Resources */,
+				26F1236B1CF4617100E4F6C9 /* BNRQuizViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +236,7 @@
 			files = (
 				26F6E9C41CF16F7E00961D57 /* BNRHypnosisViewController.m in Sources */,
 				26F6E99F1CF16E5200961D57 /* AppDelegate.m in Sources */,
+				26F1236A1CF4617100E4F6C9 /* BNRQuizViewController.m in Sources */,
 				26F6E9C11CF16E7800961D57 /* BNRHypnosisView.m in Sources */,
 				26F123641CF3C03C00E4F6C9 /* BNRReminderViewController.m in Sources */,
 				26F6E99C1CF16E5200961D57 /* main.m in Sources */,

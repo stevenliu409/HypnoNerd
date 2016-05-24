@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "BNRReminderViewController.h"
 #import "BNRHypnosisViewController.h"
+#import "BNRQuizViewController.h"
 
 @interface AppDelegate ()
 
@@ -24,9 +25,11 @@
     BNRReminderViewController *rvc = [[BNRReminderViewController alloc] initWithNibName:@"BNRReminderViewController" bundle:[NSBundle mainBundle]];
     BNRHypnosisViewController *hvc = [[BNRHypnosisViewController alloc] init];
     
+    BNRQuizViewController *qvc = [[BNRQuizViewController alloc] initWithNibName:@"BNRQuizViewController" bundle:[NSBundle mainBundle]];
+    
     
     UITabBarController *tabController = [[UITabBarController alloc] init];
-    tabController.viewControllers = @[hvc, rvc];
+    tabController.viewControllers = @[hvc, rvc, qvc];
     
     
     
