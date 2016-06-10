@@ -9,7 +9,7 @@
 #import "BNRHypnosisViewController.h"
 #import "BNRHypnosisView.h"
 
-@interface BNRHypnosisViewController ()
+@interface BNRHypnosisViewController () <UITextFieldDelegate>
 
 @property (nonatomic, strong) BNRHypnosisView *backgroundView;
 @property (nonatomic, strong) UISegmentedControl *segControl;
@@ -41,8 +41,18 @@
     self.segControl = [[UISegmentedControl alloc] initWithItems:@[@"red", @"green", @"blue"]];
     self.segControl.frame = CGRectMake(center.x-75, 20, 150, 25);
     [self.view addSubview:self.segControl];
-
-
+    
+    
+    UITextField *textField = [[UITextField alloc] init];
+    textField.frame = CGRectMake(center.x-120, 70, 240, 30);
+    textField.borderStyle = UITextBorderStyleRoundedRect;
+    textField.placeholder = @"Hypnotize Me!";
+    textField.returnKeyType = UIReturnKeyDone;
+    
+    textField.delegate = self;
+    
+    [self.view addSubview:textField];
+    
 }
 
 - (void)viewDidLoad
@@ -71,7 +81,12 @@
     }
 }
 
-
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    NSLog(@"%@",textField.text);
+    [textField resignFirstResponder];
+    return YES;
+}
 
 
 @end
